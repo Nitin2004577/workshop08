@@ -1,0 +1,52 @@
+## Build folders
+bin/
+obj/
+
+## MAUI platform folders auto-generated content
+**/Platforms/Android/**/bin/
+**/Platforms/Android/**/obj/
+**/Platforms/iOS/**/bin/
+**/Platforms/iOS/**/obj/
+**/Platforms/MacCatalyst/**/bin/
+**/Platforms/MacCatalyst/**/obj/
+**/Platforms/Windows/**/bin/
+**/Platforms/Windows/**/obj/
+
+## User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.ide
+
+## Visual Studio
+.vs/
+*.vscode/
+
+## Logs
+*.log
+
+## App packages
+*.nupkg
+*.snupkg
+
+## Cache
+*.json.cache
+*.dll
+*.pdb
+
+## Temporary files
+*.tmp
+*.temp
+*.svclog
+*.pidb
+
+## Rider / JetBrains
+.idea/
+
+## OS files
+.DS_Store
+Thumbs.db
+
+## Publish output
+publish/
