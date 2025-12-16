@@ -1,0 +1,28 @@
+@page "/foodmenu"
+@using workshop08.Components.UI
+
+<h3>Food Menu</h3>
+
+<div class="d-flex flex-wrap">
+    @foreach (var item in items)
+    {
+        <ItemCard Name="@item.Name" Ingredients="@item.Ingredients" Price="@item.Price" />
+    }
+</div>
+
+@code {
+    private List<Item> items = new()
+    {
+        new Item { Name = "Pizza", Ingredients = "Cheese, Tomato, Olives", Price = 250 },
+        new Item { Name = "Burger", Ingredients = "Bun, Patty, Lettuce, Cheese", Price = 150 },
+        new Item { Name = "Pasta", Ingredients = "Pasta, Tomato Sauce, Cheese", Price = 200 },
+        new Item { Name = "Sandwich", Ingredients = "Bread, Veggies, Cheese", Price = 100 },
+    };
+
+    public class Item
+    {
+        public string Name { get; set; } = "";
+        public string Ingredients { get; set; } = "";
+        public decimal Price { get; set; }
+    }
+}
