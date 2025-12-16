@@ -1,15 +1,9 @@
 @page "/calculator"
+ @page "/calculator"
 
 <h3>Simple Calculator</h3>
 
-<div>
-    <input type="number" @bind="Number1" placeholder="Enter first number" />
-    <input type="number" @bind="Number2" placeholder="Enter second number" />
-</div>
-
-<div style="margin-top:10px;">
-    <button @onclick="Add">Add (+)</button>
-    <button @onclick="Subtract">Subtract (-)</button>
+@@ -13,26 +13,4 @@
     <button @onclick="Multiply">Multiply (×)</button>
     <button @onclick="Divide">Divide (÷)</button>
 </div>
@@ -36,3 +30,4 @@
             Result = double.NaN; // handle divide by zero
     }
 }
+<h4>Result: @Result</h4>
